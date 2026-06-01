@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <title>To-do-list</title>
+  </head>
+  <dialog id="dialogExcluir">
+    <p>Deseja realmente Excluir?</p>
+
+    <div>
+      <button id="cancelarExcluir">Não</button>
+      <button id="confirmarExcluir">Sim</button>
+    </div>
+  </dialog>
+
+  <dialog id="dialogEditar">
+    <input type="text" id="inputEditar" />
+
+    <button id="salvarEdicao">Salvar</button>
+  </dialog>
+  <body>
+    <h1>To-do-list</h1>
+
+    <div id="container">
+      <form id="formTarefa">
+        <input
+          type="text"
+          id="tarefa"
+          placeholder="Digite uma tarefa"
+          required
+        />
+        <button type="submit" disabled id="btnAdicionar">
+          <i class="bi bi-plus-circle"></i>
+        </button>
+      </form>
+    </div>
+
+    <div id="lista"></div>
+
+    <div id="pendente">
+      <h3>Pendente</h3>
+    </div>
+
+    <div id="concluido">
+      <h3>Concluído</h3>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
